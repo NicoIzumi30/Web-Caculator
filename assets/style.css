@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #32323e;
+    margin: auto;
+}
+.title{
+    text-align: center;
+    color: #fff;
+}
+.display{
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333;
+    border: 1px solid black;
+    font-size: 2em;
+}
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+
+    /* Properti pendukung */
+    width: 35%;
+    text-align: right;
+    color: white;
+    /* properti custom */
+    margin: auto;
+    border: 3px solid rgba(255, 255, 255, 0.612);
+    margin-top: 10px;
+    padding:0;
+}
+.flex-container-row{
+    display: flex;
+}
+.card{
+    box-shadow: 0 4px 8px rgba(244, 236, 236, 0.2);
+    border-radius: 5px;
+}
+.button {
+    flex-basis: 25%;
+    /* properti pendukung */
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+    color: #333;
+    border : 1px solid black;
+    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+    cursor: pointer;
+}
+.button:hover{
+    background: #eaeaea77;
+    font-weight: bold;
+}
+.double{
+    flex-basis: 50%;
+}
+.operator,.equals,.negative{
+    background: orange !important;
+}
+@media (max-width: 613px){
+    .flex-container-column{
+        width: 100%;
+        padding: 20px;
+        width: 100%;
+        border: none;
+        min-width: 500px;
+    }
+    .button{
+        padding: 25px 10px;
+    }
+    .card{
+        padding: 25px;
+        margin-top: 20px;
+    }
+}
+@media (max-width:880px){
+    .flex-container-column{
+        width: 60%;
+    }
+    .button{
+        padding: 25px 15px;
+    }
+}
